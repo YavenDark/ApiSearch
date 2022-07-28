@@ -18,7 +18,7 @@ const estilos = makeStyles((theme) => ({
   },
 }));
 
-const Contenedor = (props) => {
+const Contenedor = () => {
   let urlClima =
     "https://api.openweathermap.org/data/2.5/weather?&appid=b90f47135e7464a35184110e23a055c5&lang=es&q=";
   let urlNoticias = "https://newsapi.org/v2/everything?q=";
@@ -53,7 +53,15 @@ const Contenedor = (props) => {
         [climaResponse, noticiasResponse].map((promise) => promise.json())
       );
 
-      setDatos({ ...climaJson, ...noticiasJson.articles });
+      await setDatos({ ...climaJson, ...noticiasJson.articles });
+      const unionOb = {
+        climaJson,
+        noticiasJson,
+      };
+      const unionString = JSON.stringify(unionOb);
+      await setUnion({ city: ciudadUrl.ciudad, info: unionString });
+     
+      await guardar();
     } else {
       console.log("No se ingreso ciudad");
     }
@@ -61,6 +69,7 @@ const Contenedor = (props) => {
 
   useEffect(() => {
     inicialUrl();
+    
   }, [ciudadUrl]);
 
   useEffect(() => {

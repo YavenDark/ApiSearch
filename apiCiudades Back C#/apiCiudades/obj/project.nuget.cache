@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "yZi5ipA0148WNfPinSsJoHMY7imh4R6IW+d6f1iRCcYCALZimb8FTfo9Ma/Vg3SuR0oeX3IIviIWl+V4OMzf4w==",
+  "dgSpecHash": "kWqggTWPXcO3XllQ82nekQ6DMAX5lGDscmQdmIZwAGiZXNTFAu8qyvLeVewzIhOVaAQGgVMNF7VooF5YJvCEMw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\User\\Desktop\\jota\\apicitys\\apiCiudades\\apiCiudades\\apiCiudades.csproj",
+  "projectFilePath": "C:\\Users\\User\\Desktop\\jota\\apicitys\\apiCiudades Back C#\\apiCiudades\\apiCiudades.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\User\\.nuget\\packages\\fluentassertions\\6.7.0\\fluentassertions.6.7.0.nupkg.sha512",
     "C:\\Users\\User\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",

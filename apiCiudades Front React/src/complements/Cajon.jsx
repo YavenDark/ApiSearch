@@ -31,7 +31,7 @@ const Cajon = (props) => {
     >
       <div className={classes.toolbar}></div>
       <Divider />
-      <Listas historial={props.historial} noticias={props.noticas}/>
+      <Listas historial={props.historial} />
     </Drawer>
   );
 };
